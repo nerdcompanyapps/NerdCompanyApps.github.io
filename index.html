@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aniversário Noah</title>
+    <style>
+        body {
+            width: 100vw;
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.2/jquery.min.js"
+        integrity="sha512-tWHlutFnuG0C6nQRlpvrEhE4QpkG1nn2MOUMWmUeRePl4e3Aki0VB6W1v3oLjFtd0hVOtRQ9PHpSfN6u6/QXkQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+
+<body>
+
+
+
+</body>
+<script>
+
+    function getPage() {
+
+
+
+
+
+        $.get("https://www.confirmae.com.br/service/confirmacao.php?key=6bc4a31fa456cbd5b54b8193c47e35898a74b723", (data, status) => {
+            console.log(data);
+        });
+
+    }
+
+    const queryString = window.location.search;
+    const urlParams = new URLSearchParams(queryString);
+    const phone = urlParams.get('phone')
+    console.log("phone", phone)
+    // Get all iframes on the page
+
+    getPage()
+    //iframeDocument.querySelector('input[name="keyPhone"]').value = phone;
+
+
+
+
+
+</script>
+
+</html>
